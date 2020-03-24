@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>vsSTOR</display-name>
+
+	<servlet>
+		<servlet-name>Account</servlet-name>
+		<servlet-class>com.vsstor.servlet.UserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Account</servlet-name>
+		<url-pattern>/account</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Configuration</servlet-name>
+		<servlet-class>com.vsstor.servlet.ConfigurationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Configuration</servlet-name>
+		<url-pattern>/configuration</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Health</servlet-name>
+		<servlet-class>com.vsstor.servlet.HealthServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Health</servlet-name>
+		<url-pattern>/health</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Upload</servlet-name>
+		<servlet-class>com.vsstor.servlet.UploadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Upload</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Process</servlet-name>
+		<servlet-class>com.vsstor.servlet.ProcessServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Process</servlet-name>
+		<url-pattern>/process</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Report</servlet-name>
+		<servlet-class>com.vsstor.servlet.ReportServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Report</servlet-name>
+		<url-pattern>/report</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<servlet-name>Control</servlet-name>
+		<servlet-class>com.vsstor.servlet.ControlServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Control</servlet-name>
+		<url-pattern>/control</url-pattern>
+	</servlet-mapping>
+
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

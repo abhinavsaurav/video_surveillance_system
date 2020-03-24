@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+F:\workspace_phase3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\811518427.index
+\vsSTOR\src
